@@ -30,3 +30,15 @@ resource "aws_s3_bucket" "bucket1" {
   tags = "${var.bucket1_tags}"
 
 }
+
+resource "aws_s3_bucket" "bucket2" {
+  bucket = "rueggerllc-${var.bucket2_name}-${var.env}"
+  acl = "private"
+
+  versioning {
+    enabled = true
+  }
+
+  tags = "${var.bucket2_tags}"
+
+}

@@ -11,3 +11,15 @@ bucket1_tags = {
   Company = "Ruegger Consulting LLC"
   Environment = "Dev"
 }
+
+
+# Bucket1
+bucket2_name              = "bucket2"
+
+# Tags
+bucket2_tags = { 
+  CreatedBy = "Chris Ruegger"
+  Bucket = "Another Terraform Bucket"
+  Company = "Ruegger Consulting LLC"
+  Environment = "Dev"
+}

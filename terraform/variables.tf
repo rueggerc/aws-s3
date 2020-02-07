@@ -17,3 +17,14 @@ variable "bucket1_name" {
 variable "bucket1_tags" {
   description = "Tags for Bucket1"
 }
+
+
+########################################
+# Bucket2
+########################################
+variable "bucket2_name" {
+  description = "Name for Bucket2"
+}
+variable "bucket2_tags" {
+  description = "Tags for Bucket2"
+}
