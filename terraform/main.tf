@@ -20,9 +20,9 @@ data "aws_caller_identity" "current_account" {
 # S3: bucket1
 ##################################
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "rueggerllc-${var.bucket1_name}-${upper(var.env)}"
+  bucket = "rueggerllc-${var.bucket1_name}-${var.env}"
   acl = "private"
-  
+
   versioning {
     enabled = true
   }
