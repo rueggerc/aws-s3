@@ -20,14 +20,12 @@ data "aws_caller_identity" "current_account" {
 # S3: bucket1
 ##################################
 resource "aws_s3_bucket" "example" {
-  bucket = "rueggerllc-bucket1"
+  bucket = "rueggerllc-${var.bucket1_name}-${upper(var.env)}"
   acl = "private"
   versioning {
-    enabled = false
+    enabled = true
   }
 
-  tags {
-    Name = "Sample Terraform Bucket"
-  }
+  tags = "${var.bucket1_tags}"
 
 }

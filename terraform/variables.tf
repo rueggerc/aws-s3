@@ -12,5 +12,8 @@ variable "env" {
 # Bucket1
 ########################################
 variable "bucket1_name" {
-  description = "Name for Sensor Data Queue"
+  description = "Name for Bucket1"
+}
+variable "bucket1_tags" {
+  description = "Tags for Bucket1"
 }
